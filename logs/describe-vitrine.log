@@ -1,0 +1,46 @@
+Name:                   vitrine-pc-04-11-2026
+Namespace:              default
+CreationTimestamp:      Wed, 04 Nov 2026 14:20:40 +0100
+Labels:                 app=vitrine
+                        nom=ponchin
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=vitrine
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=vitrine
+           nom=ponchin
+  Containers:
+   vitrine-pc-04-11-2026:
+    Image:      nagarrath/vitrine-pc-04-11-2026:v1
+    Port:       80/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     100m
+      memory:  64Mi
+    Requests:
+      cpu:         20m
+      memory:      16Mi
+    Readiness:     http-get http://:80/ delay=2s timeout=1s period=5s successThreshold=1 failureThreshold=3
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  <none>
+  Tolerations:     <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   vitrine-pc-04-11-2026-57bdfcd5 (3/3 replicas created)
+Events:
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  14m    deployment-controller  Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 0 to 3
+  Normal  ScalingReplicaSet  9m44s  deployment-controller  Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 3 to 6
+  Normal  ScalingReplicaSet  9m29s  deployment-controller  Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 6 to 12
+  Normal  ScalingReplicaSet  9m14s  deployment-controller  Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 12 to 20
+  Normal  ScalingReplicaSet  58s    deployment-controller  Scaled down replica set vitrine-pc-04-11-2026-57bdfcd5 from 20 to 3

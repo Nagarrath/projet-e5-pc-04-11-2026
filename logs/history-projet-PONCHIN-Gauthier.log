@@ -105,3 +105,30 @@ EOF
    99  2026-11-04 14:10:55 k describe deploy stripe-shop-pc-04-11-2026 > logs/describe-stripe-shop.log
   100  2026-11-04 14:11:01 k get events --sort-by=.lastTimestamp > logs/events-default.log
   101  2026-11-04 14:11:08 history > logs/history-projet-PONCHIN-Gauthier.log
+  102  2026-11-04 14:11:26 git add .
+  103  2026-11-04 14:12:39 git commit -m "stripe-shop : hpa, test de charge et readinessProbe"
+  104  2026-11-04 14:12:47 git push
+  105  2026-11-04 14:13:25 git pull
+  106  2026-11-04 14:13:55 git push
+  107  2026-11-04 14:16:45 docker pull nginxdemos/hello
+  108  2026-11-04 14:17:34 docker tag nginxdemos/hello nagarrath/vitrine-pc-04-11-2026:v1
+  109  2026-11-04 14:17:43 docker push nagarrath/vitrine-pc-04-11-2026:v1
+  110  2026-11-04 14:18:53 docker images
+  111  2026-11-04 14:20:19 code k8s/vitrine.yml
+  112  2026-11-04 14:20:40 k apply -f k8s/vitrine.yml
+  113  2026-11-04 14:20:46 k get all -l app=vitrine
+  114  2026-11-04 14:22:20 k get pods -l app=vitrine
+  115  2026-11-04 14:22:27 curl 192.168.49.2:30159
+  116  2026-11-04 14:24:10 k run hey-pc --rm -it --image=williamyeh/hey --restart=Never -- -z 3m -c 50 http://vitrine-svc-pc-04-11-2026:80/
+  117  2026-11-04 14:30:21 k top pods -l app=vitrine
+  118  2026-11-04 14:32:52 code apps/vitrine/Dockerfile
+  119  2026-11-04 14:33:06 cd ~/projet-e5-pc-04-11-2026/apps/vitrine
+  120  2026-11-04 14:33:13 docker build -t nagarrath/vitrine-pc-04-11-2026:v1 .
+  121  2026-11-04 14:33:20 docker push nagarrath/vitrine-pc-04-11-2026:v1
+  122  2026-11-04 14:34:09 cd ~/projet-e5-pc-04-11-2026
+  123  2026-11-04 14:34:22 k get hpa
+  124  2026-11-04 14:34:43 k top pods -l app=vitrine
+  125  2026-11-04 14:34:50 k describe hpa vitrine-hpa-pc-04-11-2026 > logs/describe-hpa-vitrine.log
+  126  2026-11-04 14:34:58 k describe deploy vitrine-pc-04-11-2026 > logs/describe-vitrine.log
+  127  2026-11-04 14:35:05 k get events --sort-by=.lastTimestamp > logs/events-default.log
+  128  2026-11-04 14:35:11 history > logs/history-projet-PONCHIN-Gauthier.log

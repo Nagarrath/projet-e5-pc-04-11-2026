@@ -1,158 +1,300 @@
 LAST SEEN   TYPE      REASON                         OBJECT                                                  MESSAGE
-32m         Normal    Scheduled                      pod/hey-pc                                              Successfully assigned default/hey-pc to minikube
-32m         Normal    Pulling                        pod/hey-pc                                              Pulling image "williamyeh/hey"
-32m         Normal    Pulled                         pod/hey-pc                                              Successfully pulled image "williamyeh/hey" in 2.226s (2.226s including waiting). Image size: 7853803 bytes.
-32m         Normal    Created                        pod/hey-pc                                              Container created
-32m         Normal    Started                        pod/hey-pc                                              Container started
-29m         Normal    Scheduled                      pod/hey-pc                                              Successfully assigned default/hey-pc to minikube
-29m         Normal    Pulling                        pod/hey-pc                                              Pulling image "williamyeh/hey"
-29m         Normal    Pulled                         pod/hey-pc                                              Successfully pulled image "williamyeh/hey" in 704ms (704ms including waiting). Image size: 7853803 bytes.
-29m         Normal    Created                        pod/hey-pc                                              Container created
-29m         Normal    Started                        pod/hey-pc                                              Container started
-23m         Normal    Scheduled                      pod/hey-pc                                              Successfully assigned default/hey-pc to minikube
-23m         Normal    Pulling                        pod/hey-pc                                              Pulling image "williamyeh/hey"
-23m         Normal    Pulled                         pod/hey-pc                                              Successfully pulled image "williamyeh/hey" in 716ms (716ms including waiting). Image size: 7853803 bytes.
-23m         Normal    Created                        pod/hey-pc                                              Container created
-23m         Normal    Started                        pod/hey-pc                                              Container started
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-whlks to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt to minikube
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Container created
-22m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 6; reason: cpu resource utilization (percentage of request) above target
-22m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 3 to 6
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Container created
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc to minikube
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-whlks
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Container created
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Container started
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Container started
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Container started
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-622t4
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg to minikube
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg
-22m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 6 to 12
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4 to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-622t4 to minikube
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c to minikube
-22m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 12; reason: cpu resource utilization (percentage of request) above target
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs to minikube
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Container created
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Container started
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Container started
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Container created
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Container created
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Container created
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Container started
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Container created
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Container started
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Container started
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Container created
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Container started
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4 to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v to minikube
-22m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 20; reason: cpu resource utilization (percentage of request) above target
-22m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 12 to 20
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8 to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w to minikube
-22m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w to minikube
-22m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          (combined from similar events): Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Container created
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Container created
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Container created
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Container started
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Container started
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Container created
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Container started
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Container started
-22m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Container started
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Container created
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Container started
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Container created
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Container created
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Container started
-22m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Container created
-22m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Container started
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-lt99n
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 20 to 12
-14m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 12; reason: All metrics below target
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-jl86w
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-622t4
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-whlks
-14m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Stopping container stripe-shop-pc-04-11-2026
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8
-14m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4
-13m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 12 to 3
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 3; reason: All metrics below target
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Stopping container stripe-shop-pc-04-11-2026
-13m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Stopping container stripe-shop-pc-04-11-2026
-6m42s       Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-5d6f884b69 from 0 to 1
-6m42s       Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-6m42s       Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv
-6m42s       Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Container created
-6m42s       Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Successfully assigned default/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv to minikube
-6m42s       Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Container started
-6m37s       Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr
-6m37s       Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 3 to 2
-6m37s       Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-5d6f884b69 from 1 to 2
-6m37s       Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Successfully assigned default/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr to minikube
-6m37s       Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-52mnv           Stopping container stripe-shop-pc-04-11-2026
-6m36s       Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-6m36s       Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Container created
-6m36s       Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Container started
-6m31s       Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Successfully assigned default/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf to minikube
-6m31s       Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 2 to 1
-6m31s       Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-87xbf
-6m31s       Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          (combined from similar events): Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-qcxdb
-6m31s       Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcxdb           Stopping container stripe-shop-pc-04-11-2026
-6m30s       Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Container started
-6m30s       Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Container created
-6m30s       Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
-6m25s       Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xm2tl           Stopping container stripe-shop-pc-04-11-2026
-6m25s       Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    (combined from similar events): Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 1 to 0
-5m55s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-5m55s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-4m55s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-4m55s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+56m         Normal    Scheduled                      pod/hey-pc                                              Successfully assigned default/hey-pc to minikube
+56m         Normal    Pulling                        pod/hey-pc                                              Pulling image "williamyeh/hey"
+56m         Normal    Pulled                         pod/hey-pc                                              Successfully pulled image "williamyeh/hey" in 2.226s (2.226s including waiting). Image size: 7853803 bytes.
+56m         Normal    Created                        pod/hey-pc                                              Container created
+56m         Normal    Started                        pod/hey-pc                                              Container started
+53m         Normal    Scheduled                      pod/hey-pc                                              Successfully assigned default/hey-pc to minikube
+53m         Normal    Pulling                        pod/hey-pc                                              Pulling image "williamyeh/hey"
+53m         Normal    Pulled                         pod/hey-pc                                              Successfully pulled image "williamyeh/hey" in 704ms (704ms including waiting). Image size: 7853803 bytes.
+53m         Normal    Created                        pod/hey-pc                                              Container created
+53m         Normal    Started                        pod/hey-pc                                              Container started
+48m         Normal    Scheduled                      pod/hey-pc                                              Successfully assigned default/hey-pc to minikube
+48m         Normal    Pulling                        pod/hey-pc                                              Pulling image "williamyeh/hey"
+48m         Normal    Pulled                         pod/hey-pc                                              Successfully pulled image "williamyeh/hey" in 716ms (716ms including waiting). Image size: 7853803 bytes.
+48m         Normal    Created                        pod/hey-pc                                              Container created
+48m         Normal    Started                        pod/hey-pc                                              Container started
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Container created
+46m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 3 to 6
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc to minikube
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-whlks to minikube
+46m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 6; reason: cpu resource utilization (percentage of request) above target
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt to minikube
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Container created
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-whlks
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Container started
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Container started
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Container started
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg to minikube
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx to minikube
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-622t4
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs
+46m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 6 to 12
+46m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 12; reason: cpu resource utilization (percentage of request) above target
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c to minikube
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs to minikube
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4 to minikube
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-622t4 to minikube
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Container created
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Container started
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Container started
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Container started
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Container created
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Container started
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Container started
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Container created
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Container started
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4 to minikube
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k to minikube
+46m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          (combined from similar events): Created pod: stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8 to minikube
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w to minikube
+46m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 20; reason: cpu resource utilization (percentage of request) above target
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w to minikube
+46m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 12 to 20
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v to minikube
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n to minikube
+46m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Successfully assigned default/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w to minikube
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Container started
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Container created
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Container started
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Container started
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Container created
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Container started
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Container started
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Container started
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Container created
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Container started
+46m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Container started
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Container created
+46m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Container created
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-jl86w
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-whlks
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 12; reason: All metrics below target
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-whlks           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-lt99n           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-jl86w           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-qcsh8
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-d5rxt           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-lt99n
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-rcd4c
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-622t4
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-622t4           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc
+39m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vn9jc           Stopping container stripe-shop-pc-04-11-2026
+39m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 20 to 12
+38m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4
+38m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 12 to 3
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-c7zxs           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vq4w4           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xmzrg           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-cj98v           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-vj44w           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-dvq9k           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-rgjsx           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-ncv2w           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-nrmf4           Stopping container stripe-shop-pc-04-11-2026
+38m         Normal    SuccessfulRescale              horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   New size: 3; reason: All metrics below target
+30m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Successfully assigned default/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv to minikube
+30m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-5d6f884b69 from 0 to 1
+30m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Container created
+30m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Container started
+30m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv
+30m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-rwvjv          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+30m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr
+30m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 3 to 2
+30m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-5d6f884b69 from 1 to 2
+30m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-52mnv           Stopping container stripe-shop-pc-04-11-2026
+30m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Successfully assigned default/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr to minikube
+30m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+30m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Container created
+30m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-5kbtr          Container started
+30m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 2 to 1
+30m         Normal    SuccessfulDelete               replicaset/stripe-shop-pc-04-11-2026-f4d4bc757          (combined from similar events): Deleted pod: stripe-shop-pc-04-11-2026-f4d4bc757-qcxdb
+30m         Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-87xbf
+30m         Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Successfully assigned default/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf to minikube
+30m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-qcxdb           Stopping container stripe-shop-pc-04-11-2026
+30m         Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+30m         Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Container created
+30m         Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-87xbf          Container started
+30m         Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    (combined from similar events): Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 1 to 0
+30m         Normal    Killing                        pod/stripe-shop-pc-04-11-2026-f4d4bc757-xm2tl           Stopping container stripe-shop-pc-04-11-2026
+29m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+29m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+28m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+28m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+14m         Normal    ScalingReplicaSet              deployment/vitrine-pc-04-11-2026                        Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 0 to 3
+14m         Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-c86ss                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-c86ss to minikube
+14m         Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-f9t67                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-f9t67 to minikube
+14m         Normal    Pulling                        pod/vitrine-pc-04-11-2026-57bdfcd5-59v8w                Pulling image "nagarrath/vitrine-pc-04-11-2026:v1"
+14m         Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-59v8w                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-59v8w to minikube
+14m         Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-59v8w
+14m         Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-f9t67
+14m         Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-c86ss
+14m         Normal    Pulling                        pod/vitrine-pc-04-11-2026-57bdfcd5-c86ss                Pulling image "nagarrath/vitrine-pc-04-11-2026:v1"
+14m         Normal    Pulling                        pod/vitrine-pc-04-11-2026-57bdfcd5-f9t67                Pulling image "nagarrath/vitrine-pc-04-11-2026:v1"
+14m         Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-c86ss                Container created
+14m         Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-59v8w                Successfully pulled image "nagarrath/vitrine-pc-04-11-2026:v1" in 629ms (3.692s including waiting). Image size: 22474628 bytes.
+14m         Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-c86ss                Successfully pulled image "nagarrath/vitrine-pc-04-11-2026:v1" in 3.163s (3.163s including waiting). Image size: 22474628 bytes.
+14m         Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-59v8w                Container started
+14m         Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-c86ss                Container started
+14m         Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-59v8w                Container created
+14m         Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-f9t67                Successfully pulled image "nagarrath/vitrine-pc-04-11-2026:v1" in 783ms (4.434s including waiting). Image size: 22474628 bytes.
+14m         Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-f9t67                Container created
+14m         Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-f9t67                Container started
+14m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+14m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+13m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+13m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+10m         Normal    Scheduled                      pod/hey-pc                                              Successfully assigned default/hey-pc to minikube
+10m         Normal    Pulling                        pod/hey-pc                                              Pulling image "williamyeh/hey"
+10m         Normal    Created                        pod/hey-pc                                              Container created
+10m         Normal    Started                        pod/hey-pc                                              Container started
+10m         Normal    Pulled                         pod/hey-pc                                              Successfully pulled image "williamyeh/hey" in 755ms (755ms including waiting). Image size: 7853803 bytes.
+9m51s       Normal    SuccessfulRescale              horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       New size: 6; reason: cpu resource utilization (percentage of request) above target
+9m51s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-p8vm4                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-p8vm4 to minikube
+9m51s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-9b2s6                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-9b2s6 to minikube
+9m51s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-p8vm4
+9m51s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-9b2s6
+9m51s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-c2c6z
+9m51s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-c2c6z                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-c2c6z to minikube
+9m51s       Normal    ScalingReplicaSet              deployment/vitrine-pc-04-11-2026                        Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 3 to 6
+9m50s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-p8vm4                Container started
+9m50s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-c2c6z                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m50s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-9b2s6                Container created
+9m50s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-p8vm4                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m50s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-p8vm4                Container created
+9m50s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-9b2s6                Container started
+9m50s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-9b2s6                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m50s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-c2c6z                Container started
+9m50s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-c2c6z                Container created
+9m36s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-l4k6v
+9m36s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-v2ggn                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-v2ggn to minikube
+9m36s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-xmjg4                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-xmjg4 to minikube
+9m36s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-c295q
+9m36s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-v2ggn
+9m36s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-c295q                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-c295q to minikube
+9m36s       Normal    SuccessfulRescale              horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       New size: 12; reason: cpu resource utilization (percentage of request) above target
+9m36s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-b9hn2                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-b9hn2 to minikube
+9m36s       Normal    ScalingReplicaSet              deployment/vitrine-pc-04-11-2026                        Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 6 to 12
+9m36s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-l4k6v                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-l4k6v to minikube
+9m36s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-fn52f                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-fn52f to minikube
+9m35s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-fn52f                Container created
+9m35s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-c295q                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m35s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-b9hn2                Container created
+9m35s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-b9hn2                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m35s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-v2ggn                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m35s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-v2ggn                Container created
+9m35s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-fn52f                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m35s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-xmjg4                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m35s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-l4k6v                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m35s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-xmjg4                Container created
+9m35s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-c295q                Container created
+9m35s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-v2ggn                Container started
+9m35s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-l4k6v                Container created
+9m35s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-c295q                Container started
+9m34s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-l4k6v                Container started
+9m34s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-xmjg4                Container started
+9m34s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-fn52f                Container started
+9m34s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-b9hn2                Container started
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-w892f                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-w892f to minikube
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-fqv27                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-fqv27 to minikube
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-th2bp                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-th2bp to minikube
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-9cg48                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-9cg48 to minikube
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-fzws5                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-fzws5 to minikube
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-4j7z6                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-4j7z6 to minikube
+9m21s       Normal    ScalingReplicaSet              deployment/vitrine-pc-04-11-2026                        Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 12 to 20
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-rg4nq                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-rg4nq to minikube
+9m21s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-nttxq                Successfully assigned default/vitrine-pc-04-11-2026-57bdfcd5-nttxq to minikube
+9m21s       Normal    SuccessfulRescale              horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       New size: 20; reason: cpu resource utilization (percentage of request) above target
+9m21s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               (combined from similar events): Created pod: vitrine-pc-04-11-2026-57bdfcd5-w892f
+9m20s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-nttxq                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m20s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-nttxq                Container created
+9m20s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-9cg48                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m20s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-fzws5                Container started
+9m20s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-fqv27                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m20s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-fzws5                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m20s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-fzws5                Container created
+9m19s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-th2bp                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m19s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-w892f                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m19s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-rg4nq                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m19s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-rg4nq                Container created
+9m19s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-rg4nq                Container started
+9m19s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-9cg48                Container created
+9m19s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-fqv27                Container created
+9m19s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-fqv27                Container started
+9m19s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-th2bp                Container created
+9m19s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-th2bp                Container started
+9m19s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-4j7z6                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+9m19s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-4j7z6                Container created
+9m19s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-4j7z6                Container started
+9m19s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-9cg48                Container started
+9m19s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-nttxq                Container started
+9m19s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-w892f                Container started
+9m19s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-w892f                Container created
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-nttxq                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-p8vm4                Stopping container vitrine-pc-04-11-2026
+65s         Normal    ScalingReplicaSet              deployment/vitrine-pc-04-11-2026                        Scaled down replica set vitrine-pc-04-11-2026-57bdfcd5 from 20 to 3
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-v2ggn                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-w892f                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-c295q                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-b9hn2                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-fzws5                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-fqv27                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-xmjg4                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-9b2s6                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-4j7z6                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-9cg48                Stopping container vitrine-pc-04-11-2026
+65s         Normal    SuccessfulDelete               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Deleted pod: vitrine-pc-04-11-2026-57bdfcd5-th2bp
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-th2bp                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-c2c6z                Stopping container vitrine-pc-04-11-2026
+65s         Normal    SuccessfulRescale              horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       New size: 3; reason: All metrics below target
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-l4k6v                Stopping container vitrine-pc-04-11-2026
+65s         Normal    SuccessfulDelete               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Deleted pod: vitrine-pc-04-11-2026-57bdfcd5-l4k6v
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-fn52f                Stopping container vitrine-pc-04-11-2026
+65s         Normal    Killing                        pod/vitrine-pc-04-11-2026-57bdfcd5-rg4nq                Stopping container vitrine-pc-04-11-2026
+65s         Normal    SuccessfulDelete               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Deleted pod: vitrine-pc-04-11-2026-57bdfcd5-v2ggn
+65s         Normal    SuccessfulDelete               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Deleted pod: vitrine-pc-04-11-2026-57bdfcd5-p8vm4
+65s         Normal    SuccessfulDelete               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Deleted pod: vitrine-pc-04-11-2026-57bdfcd5-c295q
+65s         Normal    SuccessfulDelete               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Deleted pod: vitrine-pc-04-11-2026-57bdfcd5-rg4nq
+65s         Normal    SuccessfulDelete               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Deleted pod: vitrine-pc-04-11-2026-57bdfcd5-w892f
+64s         Warning   Unhealthy                      pod/vitrine-pc-04-11-2026-57bdfcd5-fn52f                Readiness probe failed: Get "http://10.244.0.40:80/": dial tcp 10.244.0.40:80: connect: connection refused
+64s         Warning   Unhealthy                      pod/vitrine-pc-04-11-2026-57bdfcd5-c2c6z                Readiness probe failed: Get "http://10.244.0.35:80/": dial tcp 10.244.0.35:80: connect: connection refused
+64s         Warning   Unhealthy                      pod/vitrine-pc-04-11-2026-57bdfcd5-xmjg4                Readiness probe failed: Get "http://10.244.0.41:80/": dial tcp 10.244.0.41:80: connect: connection refused
+64s         Warning   Unhealthy                      pod/vitrine-pc-04-11-2026-57bdfcd5-b9hn2                Readiness probe failed: Get "http://10.244.0.42:80/": dial tcp 10.244.0.42:80: connect: connection refused
+64s         Warning   Unhealthy                      pod/vitrine-pc-04-11-2026-57bdfcd5-p8vm4                Readiness probe failed: Get "http://10.244.0.34:80/": dial tcp 10.244.0.34:80: connect: connection refused
+64s         Warning   Unhealthy                      pod/vitrine-pc-04-11-2026-57bdfcd5-9b2s6                Readiness probe failed: Get "http://10.244.0.36:80/": dial tcp 10.244.0.36:80: connect: connection refused
+64s         Warning   Unhealthy                      pod/vitrine-pc-04-11-2026-57bdfcd5-v2ggn                Readiness probe failed: Get "http://10.244.0.39:80/": dial tcp 10.244.0.39:80: connect: connection refused
