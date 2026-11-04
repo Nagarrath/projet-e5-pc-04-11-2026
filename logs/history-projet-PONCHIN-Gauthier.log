@@ -1,0 +1,53 @@
+    1  2026-11-04 09:12:08 docker ps
+    2  2026-11-04 09:12:20 minikube start --driver=docker --cpus=3 --memory=6g
+    3  2026-11-04 09:15:15 kubectl get nodes
+    4  2026-11-04 09:18:33 cat >> ~/.bashrc <<'EOF'
+export HISTTIMEFORMAT="%F %T "
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+alias k=kubectl
+EOF
+
+    5  2026-11-04 09:18:33 source ~/.bashrc
+    6  2026-11-04 09:19:02 minikube addons enable metrics-server
+    7  2026-11-04 09:19:16 k get pods -n kube-system | grep metrics-server
+    8  2026-11-04 09:20:08 k top nodes
+    9  2026-11-04 09:20:56 k get pods -n kube-system | grep metrics-server
+   10  2026-11-04 09:20:58 k top nodes
+   11  2026-11-04 09:22:37 git config --global user.name "Gauthier PONCHIN"
+   12  2026-11-04 09:22:47 git config --global user.email "ton-email-github"
+   13  2026-11-04 09:23:11 git config --global user.email "ponchin.gauthier@outook.fr"
+   14  2026-11-04 09:24:05 git clone https://github.com/Nagarrath/projet-e5-pc-04-11-2026.git
+   15  2026-11-04 09:24:20 cd ~/projet-e5-pc-04-11-2026
+   16  2026-11-04 09:24:22 ls
+   17  2026-11-04 09:28:55 git add erreurs.md 
+   18  2026-11-04 09:30:01 git commit -m "docs: journal des erreurs rencontrees"
+   19  2026-11-04 09:32:14 mkdir apps
+   20  2026-11-04 09:32:17 cd apps
+   21  2026-11-04 09:35:23 cd ..
+   22  2026-11-04 09:35:29 mkdir k8s
+   23  2026-11-04 09:35:36 mkdir monitoring
+   24  2026-11-04 09:35:42 mkdir logs
+   25  2026-11-04 09:35:45 ls
+   26  2026-11-04 09:35:50 cd apps
+   27  2026-11-04 09:36:03 mkdir stripe-shop
+   28  2026-11-04 09:36:10 mkdir vitrine
+   29  2026-11-04 09:36:23 mkdir stock-api
+   30  2026-11-04 09:36:31 cd stripe-shop/
+   31  2026-11-04 09:36:52 code app.py
+   32  2026-11-04 09:37:28 code requirements.txt
+   33  2026-11-04 09:37:47 code Dockerfile
+   34  2026-11-04 09:38:09 docker build -t stripe-shop-pc-04-11-2026:v1 .
+   35  2026-11-04 09:38:40 docker images
+   36  2026-11-04 09:39:51 cd ..
+   37  2026-11-04 09:39:59 touch apps/vitrine/.gitkeep
+   38  2026-11-04 09:40:04 touch apps/stock-api/.gitkeep
+   39  2026-11-04 09:40:14 touch k8s/.gitkeep
+   40  2026-11-04 09:40:21 touch monitoring/.gitkeep
+   41  2026-11-04 09:40:27 touch logs/.gitkeep
+   42  2026-11-04 09:41:18 git config --global credential.helper store
+   43  2026-11-04 09:41:25 git status
+   44  2026-11-04 09:41:31 git add .
+   45  2026-11-04 09:41:55 git commit -m "ajout de l'appli stripe-shop et de l'arborescence"
+   46  2026-11-04 09:41:59 git push
+   47  2026-11-04 09:46:25 history > logs/history-projet-PONCHIN-Gauthier.log
