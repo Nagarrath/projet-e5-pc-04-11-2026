@@ -1,32 +1,22 @@
-    1  k describe pod stock-api-mc-04-11-2026-d9765dc8c-sjf2g -n prod
-    2  minikube start --driver=docker
-    3  k describe pod -n prod -l app=stock-api-mc-04-11-2026
-    4  k delete deployment stock-api-mc-04-11-2026 -n default --ignore-not-found
-    5  k delete svc service-stock-api-mc-04-11-2026 -n default --ignore-not-found
-    6  k get pods -n prod
-    7  k get pods -A | grep stock-api
-    8  get pull
-    9* 
-   10  cd ~/projet-e5-pc-04-11-2026
-   11  git pull --rebase origin main
-   12  k get pods -n prod
-   13  k get pods -A | grep stock-api
-   14  history > logs/history-projet-CULJKAR-Matheo.log
-   15  k get hpa -A
-   16  minikube addons enable metrics-server
-   17  k get pods -n kube-system | grep metrics-server
-   18  k get hpa -A
-   19  git add .
-   20  git commit -m "historique de commandes"
-   21  git pull --rebase origin main
-   22  git push origin main
-   23  minikube addons enable metrics-server
-   24  k get pods -n kube-system | grep metrics-server
-   25  k get hpa -A
-   26  k top nodes
-   27  k top pods -A
-   28  k delete hpa stock-api-hpa-mc-04-11-2026 -n default --ignore-not-found
-   29  k top nodes > logs/top-nodes.log
-   30  k top pods -A > logs/top-pods.log
-   31  k get hpa -A > logs/hpa-status.log
-   32  history > logs/history-projet-CULJKAR-Matheo.log
+    1  POD_NAME=$(k get pods -n preprod -l app=stock-api-mc-04-11-2026 -o jsonpath='{.items[0].metadata.name}')
+    2  k exec -n preprod $POD_NAME -- python -c "while True: pass" &
+    3  minikube start --driver=docker
+    4  k get pods -n preprod
+    5  POD_NAME=$(k get pods -n preprod -l app=stock-api-mc-04-11-2026 -o jsonpath='{.items[0].metadata.name}')
+    6  echo "Pod sélectionné : $POD_NAME"
+    7  k exec -n preprod $POD_NAME -- python -c "while True: pass" &
+    8  k get hpa -n preprod
+    9  kill %1
+   10  history > logs/history-projet-CULJKAR-Matheo.log
+   11  git add .
+   12  git commit -m "docs: validation test HPA preprod CULJKAR Matheo (MC-04-11-2026)"
+   13  git pull --rebase origin main
+   14  git push origin main
+   15  cd ~/projet-e5-pc-04-11-2026/
+   16  POD_NAME=$(k get pods -n preprod -l app=stock-api-mc-04-11-2026 -o jsonpath='{.items[0].metadata.name}')
+   17  echo "Pod sélectionné : $POD_NAME"
+   18  k exec -n preprod $POD_NAME -- python -c "while True: pass" &
+   19  sleep 30
+   20  k get hpa -n preprod
+   21  kill %1
+   22  history > logs/history-projet-CULJKAR-Matheo.log
