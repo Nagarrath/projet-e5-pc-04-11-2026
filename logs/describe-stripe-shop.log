@@ -3,7 +3,7 @@ Namespace:              default
 CreationTimestamp:      Wed, 04 Nov 2026 11:51:05 +0100
 Labels:                 app=stripe-shop
                         nom=ponchin
-Annotations:            deployment.kubernetes.io/revision: 1
+Annotations:            deployment.kubernetes.io/revision: 2
 Selector:               app=stripe-shop
 Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
 StrategyType:           RollingUpdate
@@ -21,8 +21,9 @@ Pod Template:
       cpu:     250m
       memory:  128Mi
     Requests:
-      cpu:     50m
-      memory:  64Mi
+      cpu:      50m
+      memory:   64Mi
+    Readiness:  http-get http://:5000/ delay=2s timeout=1s period=5s successThreshold=1 failureThreshold=3
     Environment:
       STRIPE_SECRET_KEY:  <set to the key 'STRIPE_SECRET_KEY' in secret 'stripe-secret-pc-04-11-2026'>  Optional: false
     Mounts:               <none>
@@ -34,9 +35,18 @@ Conditions:
   ----           ------  ------
   Available      True    MinimumReplicasAvailable
   Progressing    True    NewReplicaSetAvailable
-OldReplicaSets:  <none>
-NewReplicaSet:   stripe-shop-pc-04-11-2026-f4d4bc757 (3/3 replicas created)
+OldReplicaSets:  stripe-shop-pc-04-11-2026-f4d4bc757 (0/0 replicas created)
+NewReplicaSet:   stripe-shop-pc-04-11-2026-5d6f884b69 (3/3 replicas created)
 Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  7m8s  deployment-controller  Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 0 to 3
+  Type    Reason             Age                    From                   Message
+  ----    ------             ----                   ----                   -------
+  Normal  ScalingReplicaSet  22m                    deployment-controller  Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 3 to 6
+  Normal  ScalingReplicaSet  22m                    deployment-controller  Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 6 to 12
+  Normal  ScalingReplicaSet  22m                    deployment-controller  Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 12 to 20
+  Normal  ScalingReplicaSet  14m                    deployment-controller  Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 20 to 12
+  Normal  ScalingReplicaSet  13m                    deployment-controller  Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 12 to 3
+  Normal  ScalingReplicaSet  6m36s                  deployment-controller  Scaled up replica set stripe-shop-pc-04-11-2026-5d6f884b69 from 0 to 1
+  Normal  ScalingReplicaSet  6m31s                  deployment-controller  Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 3 to 2
+  Normal  ScalingReplicaSet  6m31s                  deployment-controller  Scaled up replica set stripe-shop-pc-04-11-2026-5d6f884b69 from 1 to 2
+  Normal  ScalingReplicaSet  6m25s                  deployment-controller  Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 2 to 1
+  Normal  ScalingReplicaSet  6m19s (x2 over 6m25s)  deployment-controller  (combined from similar events): Scaled down replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 1 to 0

@@ -58,3 +58,32 @@
   v1: digest: sha256:1adfd30d822da62459294589b7d98568ff54b98727e4bb4b417d516e629ff8d4 size: 2053
   ```
 - **À retenir :** un token par service (GitHub pour git, Docker Hub pour les images), avec les droits minimum nécessaires. Le token Docker est stocké en clair dans `~/.docker/config.json` (avertissement affiché au login) : ne jamais copier ce fichier dans le repo.
+
+
+## 3. Accès à l'appli : commandes lancées sur Windows au lieu de la VM
+- **Date :** 2026-11-04
+- **Objectif :** vérifier que l'appli stripe-shop déployée dans Kubernetes répond sur son Service NodePort (port 31850).
+- **Commandes (tapées dans l'invite de commandes Windows) :**
+  ```
+  C:\Users\ponch> minikube ip
+  C:\Users\ponch> curl 192.168.49.2:31850
+  ```
+- **Erreurs affichées :**
+  ```
+  'minikube' n'est pas reconnu en tant que commande interne ou externe, un programme exécutable ou un fichier de commandes.
+  curl: (28) Failed to connect to 192.168.49.2:31850 after 21118 ms: Could not connect to server
+  ```
+- **Diagnostic :** le prompt `C:\Users\ponch>` montre que les commandes ont été lancées sur le PC Windows, et non dans la VM `tp-e5-pc-04-11-2026`.
+- **Cause :**
+  - `minikube` n'est installé que dans la VM Ubuntu, pas sur Windows.
+  - `192.168.49.2` est l'IP du nœud minikube sur le réseau Docker **interne à la VM** (driver docker). Ce réseau n'est pas routé jusqu'au PC, d'où le timeout. Un NodePort minikube n'est donc pas joignable directement depuis l'extérieur de la VM.
+- **Solution :**
+  - lancer les commandes dans le terminal VS Code connecté en SSH à la VM (`ubuntu@tp-e5-pc-04-11-2026`) :
+    ```
+    $ minikube ip
+    192.168.49.2
+    $ curl 192.168.49.2:31850
+    <h1>Boutique PC-04-11-2026</h1> ...
+    ```
+  - pour y accéder depuis le navigateur Windows : redirection de port VS Code (onglet Ports > Ajouter un port > `192.168.49.2:31850`), puis ouverture de l'adresse locale fournie (`localhost:31850`).
+- **À retenir :** toujours vérifier le prompt avant de taper une commande (Windows ou VM). Avec minikube en driver docker, l'accès externe passe par une redirection de port (VS Code, `kubectl port-forward` ou `minikube service`).

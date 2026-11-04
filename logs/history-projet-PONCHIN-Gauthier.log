@@ -86,3 +86,22 @@ EOF
    80  2026-11-04 11:58:06 k logs deploy/stripe-shop-pc-04-11-2026 > logs/k8s-logs-stripe-shop.log
    81  2026-11-04 11:58:13 k describe deploy stripe-shop-pc-04-11-2026 > logs/describe-stripe-shop.log
    82  2026-11-04 11:58:24 history > logs/history-projet-PONCHIN-Gauthier.log
+   83  2026-11-04 11:58:31 git status
+   84  2026-11-04 11:58:47 git add .
+   85  2026-11-04 11:59:03 git commit -m "deploiement kubernetes de stripe-shop + erreur 3"
+   86  2026-11-04 11:59:10 git push
+   87  2026-11-04 12:00:35 git config --global pull.rebase false
+   88  2026-11-04 12:00:44 git pull
+   89  2026-11-04 12:01:08 git push
+   90  2026-11-04 13:36:13 k top pods
+   91  2026-11-04 13:38:40 k run hey-pc --rm -it --image=williamyeh/hey --restart=Never -- -z 1m -c 20 http://stripe-shop-svc-pc-04-11-2026:5000/
+   92  2026-11-04 13:45:34 k apply -f k8s/stripe-shop.yml
+   93  2026-11-04 13:45:42 k get hpa
+   94  2026-11-04 13:47:03 k run hey-pc --rm -it --image=williamyeh/hey --restart=Never -- -z 3m -c 50 http://stripe-shop-svc-pc-04-11-2026:5000/
+   95  2026-11-04 13:54:01 k apply -f k8s/stripe-shop.yml
+   96  2026-11-04 14:06:51 k get hpa
+   97  2026-11-04 14:07:00 k get pods
+   98  2026-11-04 14:10:49 k describe hpa stripe-shop-hpa-pc-04-11-2026 > logs/describe-hpa-stripe-shop.log
+   99  2026-11-04 14:10:55 k describe deploy stripe-shop-pc-04-11-2026 > logs/describe-stripe-shop.log
+  100  2026-11-04 14:11:01 k get events --sort-by=.lastTimestamp > logs/events-default.log
+  101  2026-11-04 14:11:08 history > logs/history-projet-PONCHIN-Gauthier.log
