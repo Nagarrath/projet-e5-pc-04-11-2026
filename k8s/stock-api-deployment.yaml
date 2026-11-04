@@ -19,6 +19,11 @@ spec:
         image: hizigoh/stock-api-mc-04-11-2026:v1
         ports:
         - containerPort: 5000
+        envFrom:
+        - configMapRef:
+            name: stock-api-configmap-mc-04-11-2026
+        - secretRef:
+            name: stock-api-secret-mc-04-11-2026
         resources:
           requests:
             memory: "64Mi"
@@ -32,7 +37,7 @@ kind: Service
 metadata:
   name: service-stock-api-mc-04-11-2026
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: stock-api-mc-04-11-2026
   ports:
