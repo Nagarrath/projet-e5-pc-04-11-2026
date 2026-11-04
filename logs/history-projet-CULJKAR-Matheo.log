@@ -1,0 +1,14 @@
+    1  k describe pod stock-api-mc-04-11-2026-d9765dc8c-sjf2g -n prod
+    2  minikube start --driver=docker
+    3  k describe pod -n prod -l app=stock-api-mc-04-11-2026
+    4  k delete deployment stock-api-mc-04-11-2026 -n default --ignore-not-found
+    5  k delete svc service-stock-api-mc-04-11-2026 -n default --ignore-not-found
+    6  k get pods -n prod
+    7  k get pods -A | grep stock-api
+    8  get pull
+    9* 
+   10  cd ~/projet-e5-pc-04-11-2026
+   11  git pull --rebase origin main
+   12  k get pods -n prod
+   13  k get pods -A | grep stock-api
+   14  history > logs/history-projet-CULJKAR-Matheo.log
