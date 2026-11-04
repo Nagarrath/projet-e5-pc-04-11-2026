@@ -1,0 +1,4 @@
+NAMESPACE   NAME                          REFERENCE                            TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+mlops       stock-api-hpa-mc-04-11-2026   Deployment/stock-api-mc-04-11-2026   cpu: 1%/50%   3         20        3          68m
+preprod     stock-api-hpa-mc-04-11-2026   Deployment/stock-api-mc-04-11-2026   cpu: 1%/50%   3         20        3          66m
+prod        stock-api-hpa-mc-04-11-2026   Deployment/stock-api-mc-04-11-2026   cpu: 1%/50%   3         20        3          66m

@@ -12,3 +12,21 @@
    12  k get pods -n prod
    13  k get pods -A | grep stock-api
    14  history > logs/history-projet-CULJKAR-Matheo.log
+   15  k get hpa -A
+   16  minikube addons enable metrics-server
+   17  k get pods -n kube-system | grep metrics-server
+   18  k get hpa -A
+   19  git add .
+   20  git commit -m "historique de commandes"
+   21  git pull --rebase origin main
+   22  git push origin main
+   23  minikube addons enable metrics-server
+   24  k get pods -n kube-system | grep metrics-server
+   25  k get hpa -A
+   26  k top nodes
+   27  k top pods -A
+   28  k delete hpa stock-api-hpa-mc-04-11-2026 -n default --ignore-not-found
+   29  k top nodes > logs/top-nodes.log
+   30  k top pods -A > logs/top-pods.log
+   31  k get hpa -A > logs/hpa-status.log
+   32  history > logs/history-projet-CULJKAR-Matheo.log
