@@ -33,3 +33,28 @@
   ```
   La VM a obtenu l'IP 192.168.1.19 sur la carte pontée `eth1`.
 - **À retenir :** après un `multipass set local.*`, attendre que le service soit revenu avant d'enchaîner, et toujours vérifier la valeur actuelle avec `multipass get` avant de la changer.
+
+
+## 2. Docker Hub : push refusé (« insufficient_scope » puis « incorrect username or password »)
+- **Date :** 2026-11-04
+- **Objectif :** pousser l'image `stripe-shop-pc-04-11-2026:v1` sur Docker Hub, pour que Kubernetes puisse la télécharger (exigence du sujet).
+- **Commandes :**
+  ```
+  docker tag stripe-shop-pc-04-11-2026:v1 nagarrath/stripe-shop-pc-04-11-2026:v1
+  docker push nagarrath/stripe-shop-pc-04-11-2026:v1
+  docker login -u nagarrath
+  ```
+- **Erreurs affichées :**
+  ```
+  push access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+  Error response from daemon: Get "https://registry-1.docker.io/v2/": unauthorized: incorrect username or password
+  ```
+- **Logs / diagnostic :** le push échouait car Docker n'était connecté à aucun compte (`docker login` jamais fait dans la VM). Ensuite, `docker login` refusait le token saisi. Le pseudo `nagarrath` a été vérifié dans l'URL du profil Docker Hub (`hub.docker.com/repositories/nagarrath`), il était correct.
+- **Cause :** le token utilisé avait été créé sur **GitHub** (pour le `git push`) et non sur **Docker Hub**. Ce sont deux comptes et deux systèmes d'authentification séparés : un token GitHub n'est pas valable sur le registre Docker.
+- **Solution :** création d'un Personal Access Token sur Docker Hub (app.docker.com > Account settings > Personal access tokens, permission Read & Write), puis :
+  ```
+  docker login -u nagarrath      -> Login Succeeded
+  docker push nagarrath/stripe-shop-pc-04-11-2026:v1
+  v1: digest: sha256:1adfd30d822da62459294589b7d98568ff54b98727e4bb4b417d516e629ff8d4 size: 2053
+  ```
+- **À retenir :** un token par service (GitHub pour git, Docker Hub pour les images), avec les droits minimum nécessaires. Le token Docker est stocké en clair dans `~/.docker/config.json` (avertissement affiché au login) : ne jamais copier ce fichier dans le repo.
