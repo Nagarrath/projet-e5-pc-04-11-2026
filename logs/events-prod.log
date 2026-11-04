@@ -1,0 +1,42 @@
+LAST SEEN   TYPE      REASON                         OBJECT                                                  MESSAGE
+6m39s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+6m39s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+5m38s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+5m38s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/stripe-shop-hpa-pc-04-11-2026   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+7m24s       Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-27rsv          Successfully assigned prod-pc-04-11-2026/stripe-shop-pc-04-11-2026-5d6f884b69-27rsv to minikube
+7m24s       Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-27rsv          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+7m24s       Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-27rsv          Container created
+7m23s       Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-27rsv          Container started
+7m24s       Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-4mjn8          Successfully assigned prod-pc-04-11-2026/stripe-shop-pc-04-11-2026-5d6f884b69-4mjn8 to minikube
+7m23s       Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-4mjn8          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+7m23s       Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-4mjn8          Container created
+7m23s       Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-4mjn8          Container started
+7m20s       Warning   Unhealthy                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-4mjn8          Readiness probe failed: Get "http://10.244.0.67:5000/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+7m24s       Normal    Scheduled                      pod/stripe-shop-pc-04-11-2026-5d6f884b69-7ftg2          Successfully assigned prod-pc-04-11-2026/stripe-shop-pc-04-11-2026-5d6f884b69-7ftg2 to minikube
+7m23s       Normal    Pulled                         pod/stripe-shop-pc-04-11-2026-5d6f884b69-7ftg2          Container image "nagarrath/stripe-shop-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+7m23s       Normal    Created                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-7ftg2          Container created
+7m23s       Normal    Started                        pod/stripe-shop-pc-04-11-2026-5d6f884b69-7ftg2          Container started
+7m24s       Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-27rsv
+7m24s       Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-7ftg2
+7m24s       Normal    SuccessfulCreate               replicaset/stripe-shop-pc-04-11-2026-5d6f884b69         Created pod: stripe-shop-pc-04-11-2026-5d6f884b69-4mjn8
+7m24s       Normal    ScalingReplicaSet              deployment/stripe-shop-pc-04-11-2026                    Scaled up replica set stripe-shop-pc-04-11-2026-5d6f884b69 from 0 to 3
+6m47s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+6m47s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+5m47s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+5m47s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/vitrine-hpa-pc-04-11-2026       invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+7m17s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-4slbj                Successfully assigned prod-pc-04-11-2026/vitrine-pc-04-11-2026-57bdfcd5-4slbj to minikube
+7m17s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-4slbj                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+7m16s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-4slbj                Container created
+7m16s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-4slbj                Container started
+7m17s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-fprmq                Successfully assigned prod-pc-04-11-2026/vitrine-pc-04-11-2026-57bdfcd5-fprmq to minikube
+7m16s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-fprmq                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+7m16s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-fprmq                Container created
+7m16s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-fprmq                Container started
+7m17s       Normal    Scheduled                      pod/vitrine-pc-04-11-2026-57bdfcd5-ktkp9                Successfully assigned prod-pc-04-11-2026/vitrine-pc-04-11-2026-57bdfcd5-ktkp9 to minikube
+7m16s       Normal    Pulled                         pod/vitrine-pc-04-11-2026-57bdfcd5-ktkp9                Container image "nagarrath/vitrine-pc-04-11-2026:v1" already present on machine and can be accessed by the pod
+7m16s       Normal    Created                        pod/vitrine-pc-04-11-2026-57bdfcd5-ktkp9                Container created
+7m16s       Normal    Started                        pod/vitrine-pc-04-11-2026-57bdfcd5-ktkp9                Container started
+7m17s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-4slbj
+7m17s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-ktkp9
+7m17s       Normal    SuccessfulCreate               replicaset/vitrine-pc-04-11-2026-57bdfcd5               Created pod: vitrine-pc-04-11-2026-57bdfcd5-fprmq
+7m17s       Normal    ScalingReplicaSet              deployment/vitrine-pc-04-11-2026                        Scaled up replica set vitrine-pc-04-11-2026-57bdfcd5 from 0 to 3

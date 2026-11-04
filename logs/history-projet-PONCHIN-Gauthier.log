@@ -56,7 +56,6 @@ EOF
    50  2026-11-04 09:47:41 git add logs
    51  2026-11-04 09:48:16 git commit -m "ajout de l'hsitorique des commandes"
    52  2026-11-04 09:48:22 git push
-   53  2026-11-04 09:53:53 docker run -d --name stripe-test -p 5000:5000 -e STRIPE_SECRET_KEY=sk_test_51UXSJlFQqpIDI6yPcgYIX4LXxsem7rIYLkOzs4qHTQAkjH5eJ62CO8rPlHX1k2oxmoOuJEJhcxKNgn2wcSWv6mql00DBiYZjht stripe-shop-pc-04-11-2026:v1
    54  2026-11-04 09:54:05 docker ps
    55  2026-11-04 09:54:23 docker logs stripe-test
    56  2026-11-04 10:00:35 docker logs stripe-test > logs/history-projet-PONCHIN-Gauthier-docker-stripe-test.log
@@ -76,7 +75,6 @@ EOF
    70  2026-11-04 10:16:54 docker push nagarrath/stripe-shop-pc-04-11-2026:v1
    71  2026-11-04 11:46:18 code ~/projet-e5-pc-04-11-2026/k8s/namespaces.yml
    72  2026-11-04 11:49:21 cd ~/projet-e5-pc-04-11-2026
-   73  2026-11-04 11:50:21 k create secret generic stripe-secret-pc-04-11-2026 --from-literal=STRIPE_SECRET_KEY=sk_test_51UXSJlFQqpIDI6yPcgYIX4LXxsem7rIYLkOzs4qHTQAkjH5eJ62CO8rPlHX1k2oxmoOuJEJhcxKNgn2wcSWv6mql00DBiYZjht
    74  2026-11-04 11:50:29 k get secret
    75  2026-11-04 11:50:40 code k8s/stripe-shop.yml
    76  2026-11-04 11:51:05 k apply -f k8s/stripe-shop.yml
@@ -132,3 +130,40 @@ EOF
   126  2026-11-04 14:34:58 k describe deploy vitrine-pc-04-11-2026 > logs/describe-vitrine.log
   127  2026-11-04 14:35:05 k get events --sort-by=.lastTimestamp > logs/events-default.log
   128  2026-11-04 14:35:11 history > logs/history-projet-PONCHIN-Gauthier.log
+  129  2026-11-04 14:35:16 git pull
+  130  2026-11-04 14:35:26 git add .
+  131  2026-11-04 14:35:34 git commit -m "vitrine : dockerfile, deploiement, hpa et test de charge"
+  132  2026-11-04 14:35:39 git push
+  133  2026-11-04 14:36:01 k get hpa
+  134  2026-11-04 14:46:23 cat k8s/namespaces.yml
+  135  2026-11-04 14:52:27 k apply -f k8s/stripe-shop.yml -n mlops-pc-04-11-2026
+  136  2026-11-04 14:52:53 k apply -f k8s/namespaces.yml
+  137  2026-11-04 14:52:59 k get namespaces
+  139  2026-11-04 14:54:15 k create secret generic stripe-secret-pc-04-11-2026 --from-literal=STRIPE_SECRET_KEY=51UXSJlFQqpIDI6yPcgYIX4LXxsem7rIYLkOzs4qHTQAkjH5eJ62CO8rPlHX1k2oxmoOuJEJhcxKNgn2wcSWv6mql00DBiYZjht -n preprod-pc-04-11-2026
+  143  2026-11-04 15:00:11 read -s CLE
+  144  2026-11-04 15:07:00 k delete secret stripe-secret-pc-04-11-2026
+  145  2026-11-04 15:07:00 k delete secret stripe-secret-pc-04-11-2026 -n mlops-pc-04-11-2026
+  146  2026-11-04 15:07:00 k delete secret stripe-secret-pc-04-11-2026 -n preprod-pc-04-11-2026
+  147  2026-11-04 15:07:00 k delete secret stripe-secret-pc-04-11-2026 -n prod-pc-04-11-2026
+  152  2026-11-04 15:08:08 k rollout restart deploy/stripe-shop-pc-04-11-2026
+  154  2026-11-04 15:09:15 k get secret -A | grep stripe
+  155  2026-11-04 15:09:38 k apply -f k8s/stripe-shop.yml -n mlops-pc-04-11-2026
+  156  2026-11-04 15:09:49 k apply -f k8s/vitrine.yml -n mlops-pc-04-11-2026
+  157  2026-11-04 15:10:00 k apply -f k8s/stripe-shop.yml -n preprod-pc-04-11-2026
+  158  2026-11-04 15:10:10 k apply -f k8s/vitrine.yml -n preprod-pc-04-11-2026
+  159  2026-11-04 15:10:19 k apply -f k8s/stripe-shop.yml -n prod-pc-04-11-2026
+  160  2026-11-04 15:10:25 k apply -f k8s/vitrine.yml -n prod-pc-04-11-2026
+  161  2026-11-04 15:10:45 k get pods -A -l nom=ponchin
+  162  2026-11-04 15:11:04 k get svc -A -l nom=ponchin
+  163  2026-11-04 15:15:00 curl -s 192.168.49.2:30436 | grep Boutique
+  164  2026-11-04 15:15:09 curl -s 192.168.49.2:31788 | grep Boutique
+  165  2026-11-04 15:15:16 curl -s 192.168.49.2:32365 | grep Boutique
+  166  2026-11-04 15:15:22 curl -s 192.168.49.2:31226 | grep -o "vitrine-pc-[a-z0-9-]*"
+  167  2026-11-04 15:15:28 curl -s 192.168.49.2:31011 | grep -o "vitrine-pc-[a-z0-9-]*"
+  168  2026-11-04 15:15:35 curl -s 192.168.49.2:30095 | grep -o "vitrine-pc-[a-z0-9-]*"
+  169  2026-11-04 15:17:03 k get all -n mlops-pc-04-11-2026 > logs/get-all-mlops.log
+  170  2026-11-04 15:17:10 k get all -n preprod-pc-04-11-2026 > logs/get-all-preprod.log
+  171  2026-11-04 15:17:23 k get all -n prod-pc-04-11-2026 > logs/get-all-prod.log
+  172  2026-11-04 15:17:31 k get events -n mlops-pc-04-11-2026 > logs/events-mlops.log
+  173  2026-11-04 15:17:38 k get events -n preprod-pc-04-11-2026 > logs/events-preprod.log
+  174  2026-11-04 15:17:43 k get events -n prod-pc-04-11-2026 > logs/events-prod.log

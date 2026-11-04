@@ -1,0 +1,23 @@
+NAME                                             READY   STATUS    RESTARTS   AGE
+pod/stripe-shop-pc-04-11-2026-5d6f884b69-27ktb   1/1     Running   0          7m9s
+pod/stripe-shop-pc-04-11-2026-5d6f884b69-4mnwc   1/1     Running   0          7m9s
+pod/stripe-shop-pc-04-11-2026-5d6f884b69-7qtnb   1/1     Running   0          7m9s
+pod/vitrine-pc-04-11-2026-57bdfcd5-6ldtq         1/1     Running   0          7m
+pod/vitrine-pc-04-11-2026-57bdfcd5-k7mgb         1/1     Running   0          7m
+pod/vitrine-pc-04-11-2026-57bdfcd5-s8mxn         1/1     Running   0          7m
+
+NAME                                    TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+service/stripe-shop-svc-pc-04-11-2026   NodePort   10.106.175.34   <none>        5000:31788/TCP   7m9s
+service/vitrine-svc-pc-04-11-2026       NodePort   10.104.16.181   <none>        80:31011/TCP     7m
+
+NAME                                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/stripe-shop-pc-04-11-2026   3/3     3            3           7m9s
+deployment.apps/vitrine-pc-04-11-2026       3/3     3            3           7m
+
+NAME                                                   DESIRED   CURRENT   READY   AGE
+replicaset.apps/stripe-shop-pc-04-11-2026-5d6f884b69   3         3         3       7m9s
+replicaset.apps/vitrine-pc-04-11-2026-57bdfcd5         3         3         3       7m
+
+NAME                                                                REFERENCE                              TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/stripe-shop-hpa-pc-04-11-2026   Deployment/stripe-shop-pc-04-11-2026   cpu: 2%/50%   3         20        3          7m9s
+horizontalpodautoscaler.autoscaling/vitrine-hpa-pc-04-11-2026       Deployment/vitrine-pc-04-11-2026       cpu: 6%/50%   3         20        3          7m
