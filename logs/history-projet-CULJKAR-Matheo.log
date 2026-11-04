@@ -20,3 +20,9 @@
    20  k get hpa -n preprod
    21  kill %1
    22  history > logs/history-projet-CULJKAR-Matheo.log
+   23  git add .
+   24  git commit -m "docs: validation test HPA preprod CULJKAR Matheo (MC-04-11-2026)"
+   25  git pull --rebase origin main
+   26  git push origin main
+   27  k get hpa -A > logs/hpa-scaling-success.log
+   28  history > logs/history-projet-CULJKAR-Matheo.log
