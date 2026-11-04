@@ -51,3 +51,38 @@ EOF
    45  2026-11-04 09:41:55 git commit -m "ajout de l'appli stripe-shop et de l'arborescence"
    46  2026-11-04 09:41:59 git push
    47  2026-11-04 09:46:25 history > logs/history-projet-PONCHIN-Gauthier.log
+   48  2026-11-04 09:46:33 cat logs/history-projet-PONCHIN-Gauthier.log
+   49  2026-11-04 09:47:34 git ad logs
+   50  2026-11-04 09:47:41 git add logs
+   51  2026-11-04 09:48:16 git commit -m "ajout de l'hsitorique des commandes"
+   52  2026-11-04 09:48:22 git push
+   53  2026-11-04 09:53:53 docker run -d --name stripe-test -p 5000:5000 -e STRIPE_SECRET_KEY=sk_test_51UXSJlFQqpIDI6yPcgYIX4LXxsem7rIYLkOzs4qHTQAkjH5eJ62CO8rPlHX1k2oxmoOuJEJhcxKNgn2wcSWv6mql00DBiYZjht stripe-shop-pc-04-11-2026:v1
+   54  2026-11-04 09:54:05 docker ps
+   55  2026-11-04 09:54:23 docker logs stripe-test
+   56  2026-11-04 10:00:35 docker logs stripe-test > logs/history-projet-PONCHIN-Gauthier-docker-stripe-test.log
+   57  2026-11-04 10:01:36 docker stop stripe-test
+   58  2026-11-04 10:02:31 docker rm stripe-test
+   59  2026-11-04 10:02:38 docker login
+   60  2026-11-04 10:04:48 docker tag stripe-shop-pc-04-11-2026:v1 Nagarrath/stripe-shop-pc-04-11-2026:v1
+   61  2026-11-04 10:05:26 docker push Nagarrath/stripe-shop-pc-04-11-2026:v1
+   62  2026-11-04 10:07:12 docker rmi Nagarrath/stripe-shop-pc-04-11-2026:v1
+   63  2026-11-04 10:07:20 docker tag stripe-shop-pc-04-11-2026:v1 nagarrath/stripe-shop-pc-04-11-2026:v1
+   64  2026-11-04 10:07:26 docker push nagarrath/stripe-shop-pc-04-11-2026:v1
+   65  2026-11-04 10:08:43 docker login -u nagarrath
+   66  2026-11-04 10:09:58 docker login -u nagarath
+   67  2026-11-04 10:10:36 docker login -u Nagarath
+   68  2026-11-04 10:11:29 docker login -u nagarath
+   69  2026-11-04 10:14:45 docker login -u nagarrath
+   70  2026-11-04 10:16:54 docker push nagarrath/stripe-shop-pc-04-11-2026:v1
+   71  2026-11-04 11:46:18 code ~/projet-e5-pc-04-11-2026/k8s/namespaces.yml
+   72  2026-11-04 11:49:21 cd ~/projet-e5-pc-04-11-2026
+   73  2026-11-04 11:50:21 k create secret generic stripe-secret-pc-04-11-2026 --from-literal=STRIPE_SECRET_KEY=sk_test_51UXSJlFQqpIDI6yPcgYIX4LXxsem7rIYLkOzs4qHTQAkjH5eJ62CO8rPlHX1k2oxmoOuJEJhcxKNgn2wcSWv6mql00DBiYZjht
+   74  2026-11-04 11:50:29 k get secret
+   75  2026-11-04 11:50:40 code k8s/stripe-shop.yml
+   76  2026-11-04 11:51:05 k apply -f k8s/stripe-shop.yml
+   77  2026-11-04 11:51:13 k get all
+   78  2026-11-04 11:52:15 minikube ip
+   79  2026-11-04 11:54:36 curl 192.168.49.2:31850
+   80  2026-11-04 11:58:06 k logs deploy/stripe-shop-pc-04-11-2026 > logs/k8s-logs-stripe-shop.log
+   81  2026-11-04 11:58:13 k describe deploy stripe-shop-pc-04-11-2026 > logs/describe-stripe-shop.log
+   82  2026-11-04 11:58:24 history > logs/history-projet-PONCHIN-Gauthier.log

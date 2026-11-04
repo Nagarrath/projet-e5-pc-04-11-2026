@@ -1,0 +1,42 @@
+Name:                   stripe-shop-pc-04-11-2026
+Namespace:              default
+CreationTimestamp:      Wed, 04 Nov 2026 11:51:05 +0100
+Labels:                 app=stripe-shop
+                        nom=ponchin
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=stripe-shop
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=stripe-shop
+           nom=ponchin
+  Containers:
+   stripe-shop-pc-04-11-2026:
+    Image:      nagarrath/stripe-shop-pc-04-11-2026:v1
+    Port:       5000/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     250m
+      memory:  128Mi
+    Requests:
+      cpu:     50m
+      memory:  64Mi
+    Environment:
+      STRIPE_SECRET_KEY:  <set to the key 'STRIPE_SECRET_KEY' in secret 'stripe-secret-pc-04-11-2026'>  Optional: false
+    Mounts:               <none>
+  Volumes:                <none>
+  Node-Selectors:         <none>
+  Tolerations:            <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   stripe-shop-pc-04-11-2026-f4d4bc757 (3/3 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  7m8s  deployment-controller  Scaled up replica set stripe-shop-pc-04-11-2026-f4d4bc757 from 0 to 3

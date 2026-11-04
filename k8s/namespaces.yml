@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mlops-pc-04-11-2026
+  labels:
+    nom: ponchin
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: preprod-pc-04-11-2026
+  labels:
+    nom: ponchin
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prod-pc-04-11-2026
+  labels:
+    nom: ponchin
