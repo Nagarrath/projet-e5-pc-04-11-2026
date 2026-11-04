@@ -1,0 +1,58 @@
+# Netdata - Projet E5 - PONCHIN / CULJKAR - PC-04-11-2026
+nameOverride: netdata-pc-04-11-2026
+service:
+  type: NodePort
+  port: 19999
+
+ingress:
+  enabled: false
+
+parent:
+  podLabels:
+    nom: ponchin
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+
+child:
+  podLabels:
+    nom: ponchin
+  resources:
+    requests:
+      cpu: 50m
+      memory: 128Mi
+    limits:
+      cpu: 400m
+      memory: 384Mi
+  configs:
+    stream:
+      data: |
+        [stream]
+          enabled = yes
+          destination = netdata-pc-04-11-2026:19999
+          api key = 11111111-2222-3333-4444-555555555555
+          timeout seconds = 60
+          buffer size bytes = 1048576
+          reconnect delay seconds = 5
+          initial clock resync iterations = 60
+          
+k8sState:
+  podLabels:
+    nom: ponchin
+
+
+  configs:
+    stream:
+      data: |
+        [stream]
+          enabled = yes
+          destination = netdata-pc-04-11-2026:19999
+          api key = 11111111-2222-3333-4444-555555555555
+          timeout seconds = 60
+          buffer size bytes = 1048576
+          reconnect delay seconds = 5
+          initial clock resync iterations = 60

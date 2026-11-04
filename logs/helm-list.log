@@ -1,0 +1,2 @@
+NAME                 	NAMESPACE               	REVISION	UPDATED                                	STATUS  	CHART          	APP VERSION
+netdata-pc-04-11-2026	monitoring-pc-04-11-2026	3       	2026-11-04 15:54:41.988210198 +0100 CET	deployed	netdata-3.7.178	v2.12.2    

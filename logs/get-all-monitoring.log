@@ -1,0 +1,20 @@
+NAME                                                   READY   STATUS    RESTARTS   AGE
+pod/netdata-pc-04-11-2026-child-zllsc                  1/1     Running   0          7m49s
+pod/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc   1/1     Running   0          13m
+pod/netdata-pc-04-11-2026-parent-66869f78b6-8f27n      1/1     Running   0          21m
+
+NAME                            TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)           AGE
+service/netdata-pc-04-11-2026   NodePort   10.106.125.254   <none>        19999:30362/TCP   21m
+
+NAME                                         DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
+daemonset.apps/netdata-pc-04-11-2026-child   1         1         1       1            1           <none>          21m
+
+NAME                                              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/netdata-pc-04-11-2026-k8s-state   1/1     1            1           21m
+deployment.apps/netdata-pc-04-11-2026-parent      1/1     1            1           21m
+
+NAME                                                         DESIRED   CURRENT   READY   AGE
+replicaset.apps/netdata-pc-04-11-2026-k8s-state-5d79f5df49   0         0         0       13m
+replicaset.apps/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf   0         0         0       21m
+replicaset.apps/netdata-pc-04-11-2026-k8s-state-6f769468f8   1         1         1       13m
+replicaset.apps/netdata-pc-04-11-2026-parent-66869f78b6      1         1         1       21m

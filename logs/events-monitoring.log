@@ -1,0 +1,140 @@
+LAST SEEN   TYPE      REASON                  OBJECT                                                         MESSAGE
+28m         Normal    Scheduled               pod/netdata-child-kz2ql                                        Successfully assigned monitoring-pc-04-11-2026/netdata-child-kz2ql to minikube
+28m         Normal    Pulling                 pod/netdata-child-kz2ql                                        Pulling image "alpine:latest"
+28m         Normal    Pulled                  pod/netdata-child-kz2ql                                        Successfully pulled image "alpine:latest" in 1.962s (1.962s including waiting). Image size: 3863960 bytes.
+28m         Normal    Created                 pod/netdata-child-kz2ql                                        Container created
+28m         Normal    Started                 pod/netdata-child-kz2ql                                        Container started
+28m         Normal    Pulling                 pod/netdata-child-kz2ql                                        Pulling image "netdata/netdata:v2.12.2"
+27m         Normal    Pulled                  pod/netdata-child-kz2ql                                        Successfully pulled image "netdata/netdata:v2.12.2" in 722ms (49.796s including waiting). Image size: 325562540 bytes.
+27m         Normal    Created                 pod/netdata-child-kz2ql                                        Container created
+27m         Normal    Started                 pod/netdata-child-kz2ql                                        Container started
+27m         Warning   Unhealthy               pod/netdata-child-kz2ql                                        Readiness probe failed: uv_pipe_connect(): no such file or directory...
+22m         Normal    Killing                 pod/netdata-child-kz2ql                                        Stopping container netdata
+28m         Normal    SuccessfulCreate        daemonset/netdata-child                                        Created pod: netdata-child-kz2ql
+28m         Warning   FailedScheduling        pod/netdata-k8s-state-7c467cbdbd-h9ssg                         0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. not found
+28m         Normal    Scheduled               pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Successfully assigned monitoring-pc-04-11-2026/netdata-k8s-state-7c467cbdbd-h9ssg to minikube
+28m         Normal    Pulling                 pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Pulling image "netdata/netdata:v2.12.2"
+27m         Normal    Pulled                  pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Successfully pulled image "netdata/netdata:v2.12.2" in 1.637s (51.99s including waiting). Image size: 325562540 bytes.
+27m         Normal    Created                 pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Container created
+27m         Normal    Started                 pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Container started
+27m         Warning   Unhealthy               pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Readiness probe failed: uv_pipe_connect(): no such file or directory...
+27m         Warning   Unhealthy               pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Readiness probe failed: pong
+22m         Normal    Killing                 pod/netdata-k8s-state-7c467cbdbd-h9ssg                         Stopping container netdata
+28m         Normal    SuccessfulCreate        replicaset/netdata-k8s-state-7c467cbdbd                        Created pod: netdata-k8s-state-7c467cbdbd-h9ssg
+28m         Normal    ExternalProvisioning    persistentvolumeclaim/netdata-k8s-state-varlib                 Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+28m         Normal    Provisioning            persistentvolumeclaim/netdata-k8s-state-varlib                 External provisioner is provisioning volume for claim "monitoring-pc-04-11-2026/netdata-k8s-state-varlib"
+28m         Normal    ProvisioningSucceeded   persistentvolumeclaim/netdata-k8s-state-varlib                 Successfully provisioned volume pvc-3e838ec0-98dc-413a-a0d7-157bf31315f4
+28m         Normal    ScalingReplicaSet       deployment/netdata-k8s-state                                   Scaled up replica set netdata-k8s-state-7c467cbdbd from 0 to 1
+28m         Warning   FailedScheduling        pod/netdata-parent-544dfdc4c5-r8bfg                            0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. not found
+28m         Normal    Scheduled               pod/netdata-parent-544dfdc4c5-r8bfg                            Successfully assigned monitoring-pc-04-11-2026/netdata-parent-544dfdc4c5-r8bfg to minikube
+28m         Normal    Pulling                 pod/netdata-parent-544dfdc4c5-r8bfg                            Pulling image "netdata/netdata:v2.12.2"
+28m         Normal    Pulled                  pod/netdata-parent-544dfdc4c5-r8bfg                            Successfully pulled image "netdata/netdata:v2.12.2" in 48.6s (50.41s including waiting). Image size: 325562540 bytes.
+28m         Normal    Created                 pod/netdata-parent-544dfdc4c5-r8bfg                            Container created
+28m         Normal    Started                 pod/netdata-parent-544dfdc4c5-r8bfg                            Container started
+27m         Warning   Unhealthy               pod/netdata-parent-544dfdc4c5-r8bfg                            Readiness probe failed: uv_pipe_connect(): no such file or directory...
+22m         Normal    Killing                 pod/netdata-parent-544dfdc4c5-r8bfg                            Stopping container netdata
+28m         Normal    SuccessfulCreate        replicaset/netdata-parent-544dfdc4c5                           Created pod: netdata-parent-544dfdc4c5-r8bfg
+28m         Normal    ExternalProvisioning    persistentvolumeclaim/netdata-parent-alarms                    Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+28m         Normal    Provisioning            persistentvolumeclaim/netdata-parent-alarms                    External provisioner is provisioning volume for claim "monitoring-pc-04-11-2026/netdata-parent-alarms"
+28m         Normal    ProvisioningSucceeded   persistentvolumeclaim/netdata-parent-alarms                    Successfully provisioned volume pvc-7022159b-4075-4b02-ad64-b393a4f12fe5
+28m         Normal    Provisioning            persistentvolumeclaim/netdata-parent-database                  External provisioner is provisioning volume for claim "monitoring-pc-04-11-2026/netdata-parent-database"
+28m         Normal    ExternalProvisioning    persistentvolumeclaim/netdata-parent-database                  Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+28m         Normal    ProvisioningSucceeded   persistentvolumeclaim/netdata-parent-database                  Successfully provisioned volume pvc-52a6c7b0-a1f6-4c9f-9e3c-259342d2582e
+28m         Normal    ScalingReplicaSet       deployment/netdata-parent                                      Scaled up replica set netdata-parent-544dfdc4c5 from 0 to 1
+8m10s       Normal    Scheduled               pod/netdata-pc-04-11-2026-child-7htnj                          Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-child-7htnj to minikube
+8m9s        Normal    Pulling                 pod/netdata-pc-04-11-2026-child-7htnj                          Pulling image "alpine:latest"
+8m8s        Normal    Pulled                  pod/netdata-pc-04-11-2026-child-7htnj                          Successfully pulled image "alpine:latest" in 706ms (706ms including waiting). Image size: 3863960 bytes.
+8m8s        Normal    Created                 pod/netdata-pc-04-11-2026-child-7htnj                          Container created
+8m8s        Normal    Started                 pod/netdata-pc-04-11-2026-child-7htnj                          Container started
+8m8s        Normal    Pulling                 pod/netdata-pc-04-11-2026-child-7htnj                          Pulling image "netdata/netdata:v2.12.2"
+8m7s        Normal    Pulled                  pod/netdata-pc-04-11-2026-child-7htnj                          Successfully pulled image "netdata/netdata:v2.12.2" in 664ms (664ms including waiting). Image size: 325562540 bytes.
+8m7s        Normal    Created                 pod/netdata-pc-04-11-2026-child-7htnj                          Container created
+8m7s        Normal    Started                 pod/netdata-pc-04-11-2026-child-7htnj                          Container started
+8m2s        Warning   Unhealthy               pod/netdata-pc-04-11-2026-child-7htnj                          Readiness probe failed: uv_pipe_connect(): no such file or directory...
+8m2s        Normal    Killing                 pod/netdata-pc-04-11-2026-child-7htnj                          Stopping container netdata
+13m         Normal    Scheduled               pod/netdata-pc-04-11-2026-child-bh55d                          Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-child-bh55d to minikube
+13m         Normal    Pulling                 pod/netdata-pc-04-11-2026-child-bh55d                          Pulling image "alpine:latest"
+13m         Normal    Pulled                  pod/netdata-pc-04-11-2026-child-bh55d                          Successfully pulled image "alpine:latest" in 670ms (670ms including waiting). Image size: 3863960 bytes.
+13m         Normal    Created                 pod/netdata-pc-04-11-2026-child-bh55d                          Container created
+13m         Normal    Started                 pod/netdata-pc-04-11-2026-child-bh55d                          Container started
+13m         Normal    Pulling                 pod/netdata-pc-04-11-2026-child-bh55d                          Pulling image "netdata/netdata:v2.12.2"
+13m         Normal    Pulled                  pod/netdata-pc-04-11-2026-child-bh55d                          Successfully pulled image "netdata/netdata:v2.12.2" in 676ms (676ms including waiting). Image size: 325562540 bytes.
+13m         Normal    Created                 pod/netdata-pc-04-11-2026-child-bh55d                          Container created
+13m         Normal    Started                 pod/netdata-pc-04-11-2026-child-bh55d                          Container started
+13m         Warning   Unhealthy               pod/netdata-pc-04-11-2026-child-bh55d                          Readiness probe failed: uv_pipe_connect(): no such file or directory...
+8m12s       Normal    Killing                 pod/netdata-pc-04-11-2026-child-bh55d                          Stopping container netdata
+22m         Normal    Scheduled               pod/netdata-pc-04-11-2026-child-cvkwt                          Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-child-cvkwt to minikube
+22m         Normal    Pulling                 pod/netdata-pc-04-11-2026-child-cvkwt                          Pulling image "alpine:latest"
+22m         Normal    Pulled                  pod/netdata-pc-04-11-2026-child-cvkwt                          Successfully pulled image "alpine:latest" in 760ms (760ms including waiting). Image size: 3863960 bytes.
+22m         Normal    Created                 pod/netdata-pc-04-11-2026-child-cvkwt                          Container created
+22m         Normal    Started                 pod/netdata-pc-04-11-2026-child-cvkwt                          Container started
+22m         Normal    Pulling                 pod/netdata-pc-04-11-2026-child-cvkwt                          Pulling image "netdata/netdata:v2.12.2"
+22m         Normal    Pulled                  pod/netdata-pc-04-11-2026-child-cvkwt                          Successfully pulled image "netdata/netdata:v2.12.2" in 653ms (1.22s including waiting). Image size: 325562540 bytes.
+22m         Normal    Created                 pod/netdata-pc-04-11-2026-child-cvkwt                          Container created
+22m         Normal    Started                 pod/netdata-pc-04-11-2026-child-cvkwt                          Container started
+13m         Warning   Unhealthy               pod/netdata-pc-04-11-2026-child-cvkwt                          Readiness probe failed: uv_pipe_connect(): no such file or directory...
+13m         Normal    Killing                 pod/netdata-pc-04-11-2026-child-cvkwt                          Stopping container netdata
+8m1s        Normal    Scheduled               pod/netdata-pc-04-11-2026-child-zllsc                          Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-child-zllsc to minikube
+8m          Normal    Pulling                 pod/netdata-pc-04-11-2026-child-zllsc                          Pulling image "alpine:latest"
+7m59s       Normal    Pulled                  pod/netdata-pc-04-11-2026-child-zllsc                          Successfully pulled image "alpine:latest" in 640ms (641ms including waiting). Image size: 3863960 bytes.
+7m59s       Normal    Created                 pod/netdata-pc-04-11-2026-child-zllsc                          Container created
+7m59s       Normal    Started                 pod/netdata-pc-04-11-2026-child-zllsc                          Container started
+7m59s       Normal    Pulling                 pod/netdata-pc-04-11-2026-child-zllsc                          Pulling image "netdata/netdata:v2.12.2"
+7m58s       Normal    Pulled                  pod/netdata-pc-04-11-2026-child-zllsc                          Successfully pulled image "netdata/netdata:v2.12.2" in 844ms (844ms including waiting). Image size: 325562540 bytes.
+7m58s       Normal    Created                 pod/netdata-pc-04-11-2026-child-zllsc                          Container created
+7m58s       Normal    Started                 pod/netdata-pc-04-11-2026-child-zllsc                          Container started
+7m55s       Warning   Unhealthy               pod/netdata-pc-04-11-2026-child-zllsc                          Readiness probe failed: uv_pipe_connect(): no such file or directory...
+22m         Normal    SuccessfulCreate        daemonset/netdata-pc-04-11-2026-child                          Created pod: netdata-pc-04-11-2026-child-cvkwt
+13m         Normal    SuccessfulDelete        daemonset/netdata-pc-04-11-2026-child                          Deleted pod: netdata-pc-04-11-2026-child-cvkwt
+13m         Normal    SuccessfulCreate        daemonset/netdata-pc-04-11-2026-child                          Created pod: netdata-pc-04-11-2026-child-bh55d
+8m12s       Normal    SuccessfulDelete        daemonset/netdata-pc-04-11-2026-child                          Deleted pod: netdata-pc-04-11-2026-child-bh55d
+8m10s       Normal    SuccessfulCreate        daemonset/netdata-pc-04-11-2026-child                          Created pod: netdata-pc-04-11-2026-child-7htnj
+8m2s        Normal    SuccessfulDelete        daemonset/netdata-pc-04-11-2026-child                          Deleted pod: netdata-pc-04-11-2026-child-7htnj
+8m1s        Normal    SuccessfulCreate        daemonset/netdata-pc-04-11-2026-child                          Created pod: netdata-pc-04-11-2026-child-zllsc
+13m         Normal    Scheduled               pod/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb           Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb to minikube
+13m         Normal    Pulling                 pod/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb           Pulling image "netdata/netdata:v2.12.2"
+13m         Normal    Pulled                  pod/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb           Successfully pulled image "netdata/netdata:v2.12.2" in 683ms (683ms including waiting). Image size: 325562540 bytes.
+13m         Normal    Created                 pod/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb           Container created
+13m         Normal    Started                 pod/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb           Container started
+13m         Warning   Unhealthy               pod/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb           Readiness probe failed: uv_pipe_connect(): no such file or directory...
+13m         Normal    Killing                 pod/netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb           Stopping container netdata
+13m         Normal    SuccessfulCreate        replicaset/netdata-pc-04-11-2026-k8s-state-5d79f5df49          Created pod: netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb
+13m         Normal    SuccessfulDelete        replicaset/netdata-pc-04-11-2026-k8s-state-5d79f5df49          Deleted pod: netdata-pc-04-11-2026-k8s-state-5d79f5df49-vxdqb
+22m         Normal    Scheduled               pod/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns           Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns to minikube
+22m         Normal    Pulling                 pod/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns           Pulling image "netdata/netdata:v2.12.2"
+22m         Normal    Pulled                  pod/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns           Successfully pulled image "netdata/netdata:v2.12.2" in 728ms (2.143s including waiting). Image size: 325562540 bytes.
+22m         Normal    Created                 pod/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns           Container created
+22m         Normal    Started                 pod/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns           Container started
+22m         Warning   Unhealthy               pod/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns           Readiness probe failed: uv_pipe_connect(): no such file or directory...
+13m         Normal    Killing                 pod/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns           Stopping container netdata
+22m         Normal    SuccessfulCreate        replicaset/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf          Created pod: netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns
+13m         Normal    SuccessfulDelete        replicaset/netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf          Deleted pod: netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf-mh2ns
+13m         Normal    Scheduled               pod/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc           Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc to minikube
+13m         Normal    Pulling                 pod/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc           Pulling image "netdata/netdata:v2.12.2"
+13m         Normal    Pulled                  pod/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc           Successfully pulled image "netdata/netdata:v2.12.2" in 640ms (641ms including waiting). Image size: 325562540 bytes.
+13m         Normal    Created                 pod/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc           Container created
+13m         Normal    Started                 pod/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc           Container started
+13m         Warning   Unhealthy               pod/netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc           Readiness probe failed: uv_pipe_connect(): no such file or directory...
+13m         Normal    SuccessfulCreate        replicaset/netdata-pc-04-11-2026-k8s-state-6f769468f8          Created pod: netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc
+22m         Normal    Provisioning            persistentvolumeclaim/netdata-pc-04-11-2026-k8s-state-varlib   External provisioner is provisioning volume for claim "monitoring-pc-04-11-2026/netdata-pc-04-11-2026-k8s-state-varlib"
+22m         Normal    ExternalProvisioning    persistentvolumeclaim/netdata-pc-04-11-2026-k8s-state-varlib   Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+22m         Normal    ProvisioningSucceeded   persistentvolumeclaim/netdata-pc-04-11-2026-k8s-state-varlib   Successfully provisioned volume pvc-974f730b-7172-4fd6-b5be-78bacd76753f
+22m         Normal    ScalingReplicaSet       deployment/netdata-pc-04-11-2026-k8s-state                     Scaled up replica set netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf from 0 to 1
+13m         Normal    ScalingReplicaSet       deployment/netdata-pc-04-11-2026-k8s-state                     Scaled down replica set netdata-pc-04-11-2026-k8s-state-6bdfdfdcbf from 1 to 0
+13m         Normal    ScalingReplicaSet       deployment/netdata-pc-04-11-2026-k8s-state                     Scaled up replica set netdata-pc-04-11-2026-k8s-state-5d79f5df49 from 0 to 1
+13m         Normal    ScalingReplicaSet       deployment/netdata-pc-04-11-2026-k8s-state                     Scaled down replica set netdata-pc-04-11-2026-k8s-state-5d79f5df49 from 1 to 0
+13m         Normal    ScalingReplicaSet       deployment/netdata-pc-04-11-2026-k8s-state                     Scaled up replica set netdata-pc-04-11-2026-k8s-state-6f769468f8 from 0 to 1
+22m         Normal    Scheduled               pod/netdata-pc-04-11-2026-parent-66869f78b6-8f27n              Successfully assigned monitoring-pc-04-11-2026/netdata-pc-04-11-2026-parent-66869f78b6-8f27n to minikube
+22m         Normal    Pulling                 pod/netdata-pc-04-11-2026-parent-66869f78b6-8f27n              Pulling image "netdata/netdata:v2.12.2"
+22m         Normal    Pulled                  pod/netdata-pc-04-11-2026-parent-66869f78b6-8f27n              Successfully pulled image "netdata/netdata:v2.12.2" in 788ms (1.506s including waiting). Image size: 325562540 bytes.
+22m         Normal    Created                 pod/netdata-pc-04-11-2026-parent-66869f78b6-8f27n              Container created
+22m         Normal    Started                 pod/netdata-pc-04-11-2026-parent-66869f78b6-8f27n              Container started
+22m         Warning   Unhealthy               pod/netdata-pc-04-11-2026-parent-66869f78b6-8f27n              Readiness probe failed: uv_pipe_connect(): no such file or directory...
+22m         Normal    SuccessfulCreate        replicaset/netdata-pc-04-11-2026-parent-66869f78b6             Created pod: netdata-pc-04-11-2026-parent-66869f78b6-8f27n
+22m         Normal    ExternalProvisioning    persistentvolumeclaim/netdata-pc-04-11-2026-parent-alarms      Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+22m         Normal    Provisioning            persistentvolumeclaim/netdata-pc-04-11-2026-parent-alarms      External provisioner is provisioning volume for claim "monitoring-pc-04-11-2026/netdata-pc-04-11-2026-parent-alarms"
+22m         Normal    ProvisioningSucceeded   persistentvolumeclaim/netdata-pc-04-11-2026-parent-alarms      Successfully provisioned volume pvc-fd2f8c86-7678-44fb-a1a8-039e41d0e0b5
+22m         Normal    ExternalProvisioning    persistentvolumeclaim/netdata-pc-04-11-2026-parent-database    Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+22m         Normal    Provisioning            persistentvolumeclaim/netdata-pc-04-11-2026-parent-database    External provisioner is provisioning volume for claim "monitoring-pc-04-11-2026/netdata-pc-04-11-2026-parent-database"
+22m         Normal    ProvisioningSucceeded   persistentvolumeclaim/netdata-pc-04-11-2026-parent-database    Successfully provisioned volume pvc-f48919c9-12f4-49c0-ac95-ae3ee8b09393
+22m         Normal    ScalingReplicaSet       deployment/netdata-pc-04-11-2026-parent                        Scaled up replica set netdata-pc-04-11-2026-parent-66869f78b6 from 0 to 1

@@ -1,0 +1,306 @@
+Name:             netdata-pc-04-11-2026-child-zllsc
+Namespace:        monitoring-pc-04-11-2026
+Priority:         0
+Service Account:  netdata
+Node:             minikube/192.168.49.2
+Start Time:       Wed, 04 Nov 2026 15:54:55 +0100
+Labels:           app=netdata-pc-04-11-2026
+                  controller-revision-hash=8b87f8695
+                  nom=ponchin
+                  pod-template-generation=4
+                  release=netdata-pc-04-11-2026
+                  role=child
+Annotations:      checksum/config: b9ec8ce9e80e9fea2534e1423980894ae27172e37780727a3250f9001fd8f60a
+                  container.apparmor.security.beta.kubernetes.io/netdata: unconfined
+                  kubectl.kubernetes.io/restartedAt: 2026-11-04T15:54:53+01:00
+Status:           Running
+IP:               192.168.49.2
+IPs:
+  IP:           192.168.49.2
+Controlled By:  DaemonSet/netdata-pc-04-11-2026-child
+Init Containers:
+  init-persistence:
+    Container ID:  containerd://13b42ded456bbba033f9fdd308d3155a10d30955f8ddab36d3dee7ed397cd83e
+    Image:         alpine:latest
+    Image ID:      docker.io/library/alpine@sha256:be2656061b536c1883c4034790e21d0a09c5aaaf51968b89368a3c0371ea2c9a
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+       chmod 777 /persistencevarlibdir; 
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 04 Nov 2026 15:54:56 +0100
+      Finished:     Wed, 04 Nov 2026 15:54:56 +0100
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        10m
+    Environment:  <none>
+    Mounts:
+      /persistencevarlibdir from persistencevarlibdir (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zg86c (ro)
+Containers:
+  netdata:
+    Container ID:   containerd://70c5c353bc580196ce3ec7724612d7170f2ad4a7973bbc109ce1a651d5de7294
+    Image:          netdata/netdata:v2.12.2
+    Image ID:       docker.io/netdata/netdata@sha256:3d00de3756e1e9150c6121080934168ab5f2ceffce6d494573316c09c18adf83
+    Port:           19999/TCP (http)
+    Host Port:      19999/TCP (http)
+    State:          Running
+      Started:      Wed, 04 Nov 2026 15:54:57 +0100
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     400m
+      memory:  384Mi
+    Requests:
+      cpu:      50m
+      memory:   128Mi
+    Liveness:   exec [/usr/sbin/netdatacli ping] delay=0s timeout=1s period=30s successThreshold=1 failureThreshold=3
+    Readiness:  exec [/usr/sbin/netdatacli ping] delay=0s timeout=1s period=30s successThreshold=1 failureThreshold=3
+    Environment:
+      MY_POD_NAME:            netdata-pc-04-11-2026-child-zllsc (v1:metadata.name)
+      MY_NODE_NAME:            (v1:spec.nodeName)
+      MY_POD_NAMESPACE:       monitoring-pc-04-11-2026 (v1:metadata.namespace)
+      NETDATA_LISTENER_PORT:  19999
+    Mounts:
+      /etc/netdata/go.d.conf from configmap (rw,path="go.d")
+      /etc/netdata/go.d/k8s_kubelet.conf from configmap (rw,path="kubelet")
+      /etc/netdata/go.d/k8s_kubeproxy.conf from configmap (rw,path="kubeproxy")
+      /etc/netdata/go.d/sd/k8s.conf from sdconfigmap (rw,path="config.yml")
+      /etc/netdata/netdata.conf from configmap (rw,path="netdata")
+      /etc/netdata/stream.conf from configmap (rw,path="stream")
+      /host/etc/os-release from os-release (rw)
+      /host/proc from proc (ro)
+      /host/sys from sys (rw)
+      /host/var/log from varlog (rw)
+      /var/lib/netdata from persistencevarlibdir (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zg86c (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  proc:
+    Type:          HostPath (bare host directory volume)
+    Path:          /proc
+    HostPathType:  
+  sys:
+    Type:          HostPath (bare host directory volume)
+    Path:          /sys
+    HostPathType:  
+  os-release:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/os-release
+    HostPathType:  
+  varlog:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/log
+    HostPathType:  
+  configmap:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      netdata-conf-child
+    Optional:  true
+  configsecret:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  netdata-conf-child
+    Optional:    true
+  persistencevarlibdir:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/lib/netdata-k8s-child/var/lib/netdata
+    HostPathType:  DirectoryOrCreate
+  sdconfigmap:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      netdata-child-sd-config-map
+    Optional:  true
+  kube-api-access-zg86c:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 :NoSchedule op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+
+
+Name:             netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc
+Namespace:        monitoring-pc-04-11-2026
+Priority:         0
+Service Account:  netdata
+Node:             minikube/192.168.49.2
+Start Time:       Wed, 04 Nov 2026 15:49:30 +0100
+Labels:           app=netdata-pc-04-11-2026
+                  nom=ponchin
+                  pod-template-hash=6f769468f8
+                  release=netdata-pc-04-11-2026
+                  role=k8sState
+Annotations:      checksum/config: ca1160748519628d40bfaccce9049c1322c6164baaef41b96e21d702933394a6
+                  container.apparmor.security.beta.kubernetes.io/netdata: unconfined
+                  kubectl.kubernetes.io/restartedAt: 2026-11-04T15:49:28+01:00
+Status:           Running
+IP:               10.244.0.77
+IPs:
+  IP:           10.244.0.77
+Controlled By:  ReplicaSet/netdata-pc-04-11-2026-k8s-state-6f769468f8
+Containers:
+  netdata:
+    Container ID:   containerd://ed6639b8b12aeb075d65211980472a5bd78fefa6ed5ddf957de714e3e1790d31
+    Image:          netdata/netdata:v2.12.2
+    Image ID:       docker.io/netdata/netdata@sha256:3d00de3756e1e9150c6121080934168ab5f2ceffce6d494573316c09c18adf83
+    Port:           19999/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Wed, 04 Nov 2026 15:49:31 +0100
+    Ready:          True
+    Restart Count:  0
+    Liveness:       exec [/usr/sbin/netdatacli ping] delay=0s timeout=1s period=30s successThreshold=1 failureThreshold=3
+    Readiness:      exec [/usr/sbin/netdatacli ping] delay=0s timeout=1s period=30s successThreshold=1 failureThreshold=3
+    Environment:
+      MY_POD_NAME:            netdata-pc-04-11-2026-k8s-state-6f769468f8-lvlzc (v1:metadata.name)
+      MY_POD_NAMESPACE:       monitoring-pc-04-11-2026 (v1:metadata.namespace)
+      NETDATA_LISTENER_PORT:  19999
+    Mounts:
+      /etc/netdata/go.d.conf from configmap (rw,path="go.d")
+      /etc/netdata/go.d/k8s_state.conf from configmap (rw,path="go.d-k8s_state")
+      /etc/netdata/netdata.conf from configmap (rw,path="netdata")
+      /etc/netdata/stream.conf from configmap (rw,path="stream")
+      /host/etc/os-release from os-release (rw)
+      /var/lib/netdata from varlib (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-lccp2 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  os-release:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/os-release
+    HostPathType:  
+  configmap:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      netdata-conf-k8s-state
+    Optional:  true
+  configsecret:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  netdata-conf-k8s-state
+    Optional:    true
+  varlib:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  netdata-pc-04-11-2026-k8s-state-varlib
+    ReadOnly:   false
+  kube-api-access-lccp2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             netdata-pc-04-11-2026-parent-66869f78b6-8f27n
+Namespace:        monitoring-pc-04-11-2026
+Priority:         0
+Service Account:  netdata
+Node:             minikube/192.168.49.2
+Start Time:       Wed, 04 Nov 2026 15:40:49 +0100
+Labels:           app=netdata-pc-04-11-2026
+                  nom=ponchin
+                  pod-template-hash=66869f78b6
+                  release=netdata-pc-04-11-2026
+                  role=parent
+Annotations:      checksum/config: 77637eebc3de938e5483875e92be6933b2e8f1a90e13b19a12dd7ff251ca938f
+Status:           Running
+IP:               10.244.0.74
+IPs:
+  IP:           10.244.0.74
+Controlled By:  ReplicaSet/netdata-pc-04-11-2026-parent-66869f78b6
+Containers:
+  netdata:
+    Container ID:   containerd://b01ddf9165f9d70b017e09b8c4a0a26f919972188f5cadcad49685fed7f76ac9
+    Image:          netdata/netdata:v2.12.2
+    Image ID:       docker.io/netdata/netdata@sha256:3d00de3756e1e9150c6121080934168ab5f2ceffce6d494573316c09c18adf83
+    Port:           19999/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Wed, 04 Nov 2026 15:40:52 +0100
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:      100m
+      memory:   256Mi
+    Liveness:   exec [/usr/sbin/netdatacli ping] delay=0s timeout=1s period=30s successThreshold=1 failureThreshold=3
+    Readiness:  exec [/usr/sbin/netdatacli ping] delay=0s timeout=1s period=30s successThreshold=1 failureThreshold=3
+    Environment:
+      MY_POD_NAME:            netdata-pc-04-11-2026-parent-66869f78b6-8f27n (v1:metadata.name)
+      MY_POD_NAMESPACE:       monitoring-pc-04-11-2026 (v1:metadata.namespace)
+      NETDATA_LISTENER_PORT:  19999
+    Mounts:
+      /etc/netdata/health_alarm_notify.conf from configmap (rw,path="health")
+      /etc/netdata/netdata.conf from configmap (rw,path="netdata")
+      /etc/netdata/stream.conf from configmap (rw,path="stream")
+      /host/etc/os-release from os-release (rw)
+      /var/cache/netdata from database (rw)
+      /var/lib/netdata from alarms (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6zpcf (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  os-release:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/os-release
+    HostPathType:  
+  configmap:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      netdata-conf-parent
+    Optional:  true
+  configsecret:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  netdata-conf-parent
+    Optional:    true
+  database:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  netdata-pc-04-11-2026-parent-database
+    ReadOnly:   false
+  alarms:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  netdata-pc-04-11-2026-parent-alarms
+    ReadOnly:   false
+  kube-api-access-6zpcf:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
